@@ -10,7 +10,15 @@ import {
 } from "recharts";
 import { refColor } from "../colors";
 
-export function CombinedChart({ data, color1, color2 }) {
+export function CombinedChart({
+  data,
+  color1,
+  color2,
+  maxTL,
+  minTL,
+  maxHL,
+  minHL,
+}) {
   return (
     <LineChart
       style={{ fontSize: "14px" }}
@@ -26,27 +34,27 @@ export function CombinedChart({ data, color1, color2 }) {
       <Legend />
       <ReferenceLine
         y={100}
-        label="Max Temp (100°C)"
+        label={maxTL}
         stroke={refColor}
         strokeDasharray="2 2"
       />
       <Line type="monotone" dataKey="temp" stroke={color1} />
       <ReferenceLine
         y={60}
-        label="Min Temp (60°C)"
+        label={minTL}
         stroke={refColor}
         strokeDasharray="2 2"
       />
       <ReferenceLine
         y={50}
-        label="Max Humid (50%)"
+        label={maxHL}
         stroke={refColor}
         strokeDasharray="2 2"
       />
       <Line type="monotone" dataKey="humid" stroke={color2} />
       <ReferenceLine
         y={10}
-        label="Min Humid (10%)"
+        label={minHL}
         stroke={refColor}
         strokeDasharray="2 2"
       />

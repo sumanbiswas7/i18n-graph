@@ -1,7 +1,7 @@
 import { Radio, Group } from "@mantine/core";
 import { useEffect, useState } from "react";
 
-export function SelectX({ onChange }) {
+export function SelectX({ onChange, data }) {
   const [value, setValue] = useState("minute");
 
   useEffect(() => {
@@ -20,12 +20,12 @@ export function SelectX({ onChange }) {
         marginTop: 15,
       }}
       // label="Select your preffered time unit"
-      description="Select your preffered time unit"
+      // description="Select your preffered time unit"
     >
       <Group mt="xs">
-        <Radio value="second" label="Seconds" />
-        <Radio value="minute" label="Minutes" />
-        <Radio value="hour" label="Hours" />
+        <Radio value="second" label={data.sec} />
+        <Radio value="minute" label={data.min} />
+        <Radio value="hour" label={data.hour} />
       </Group>
     </Radio.Group>
   );

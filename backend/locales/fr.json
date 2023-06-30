@@ -1,5 +1,6 @@
 {
   "hello": "Bonjour",
+  "language": "fr",
   "times.units.hour": "Heures",
   "times.units.min": "Minutes",
   "times.units.sec": "Secondes",

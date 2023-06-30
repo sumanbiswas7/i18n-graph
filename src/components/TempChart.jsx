@@ -10,7 +10,7 @@ import {
 } from "recharts";
 import { refColor } from "../colors";
 
-export function TempChart({ data, color }) {
+export function TempChart({ data, color, maxL, minL }) {
   return (
     <LineChart
       style={{ fontSize: "14px" }}
@@ -26,14 +26,14 @@ export function TempChart({ data, color }) {
       <Legend />
       <ReferenceLine
         y={100}
-        label="Max Temp (100°C)"
+        label={maxL}
         stroke={refColor}
         strokeDasharray="2 2"
       />
       <Line type="monotone" dataKey="temp" stroke={color} />
       <ReferenceLine
         y={60}
-        label="Min Temp (60°C)"
+        label={minL}
         stroke={refColor}
         strokeDasharray="2 2"
       />

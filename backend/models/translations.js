@@ -1,5 +1,6 @@
 const translations = (res) => ({
   hello: res.__("hello"),
+  language: res.__("language"),
   times: {
     units: {
       hour: res.__("times.units.hour"),

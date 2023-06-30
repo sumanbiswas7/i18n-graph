@@ -10,7 +10,7 @@ import {
 } from "recharts";
 import { refColor } from "../colors";
 
-export function HumidChart({ data, color }) {
+export function HumidChart({ data, color, maxL, minL }) {
   return (
     <LineChart
       style={{ fontSize: "14px" }}
@@ -26,14 +26,14 @@ export function HumidChart({ data, color }) {
       <Legend />
       <ReferenceLine
         y={50}
-        label="Max Humid (50%)"
+        label={maxL}
         stroke={refColor}
         strokeDasharray="2 2"
       />
       <Line type="monotone" dataKey="humid" stroke={color} />
       <ReferenceLine
         y={10}
-        label="Min Humid (10%)"
+        label={minL}
         stroke={refColor}
         strokeDasharray="2 2"
       />
