@@ -90,14 +90,7 @@ export default function App() {
         </Tabs.Panel>
       </Tabs>
 
-      <div
-        style={{
-          width: 1000,
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-end",
-        }}
-      >
+      <div style={{ width: 1000 }} className="bottom-container">
         <SelectX onChange={handleXSelectChange} data={lang.times.units} />
         <LanguagePicker onChange={handleLanguageChange} />
       </div>
