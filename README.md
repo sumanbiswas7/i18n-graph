@@ -33,6 +33,6 @@ yarn run dev
 - [x] Time unit selection (Hours, Minutes, Seconds)
 - [x] Tabs to allow user to select which plots or combination to show
 - [x] Language specefic labels on Y axis
-- [] Y scale must be shown
+- [ ] Y scale must be shown
 
 Please ensure that you have Node.js and Yarn installed on your machine before running the project.
