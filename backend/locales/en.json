@@ -1,3 +1,16 @@
 {
-  "hello": "Hello!"
+  "hello": "Hello",
+  "times.units.hour": "Hours",
+  "times.units.min": "Minutes",
+  "times.units.sec": "Seconds",
+  "tabs.names.temp": "Temperature",
+  "tabs.names.humid": "Humidity",
+  "tabs.names.combined": "Combined",
+  "graph.units.hour": "H",
+  "graph.units.min": "min",
+  "graph.units.sec": "sec",
+  "graph.labels.minHumid": "Min Humidity (10%)",
+  "graph.labels.maxHumid": "Max Humidity (50%)",
+  "graph.labels.minTemp": "Min Temperature (60°C)",
+  "graph.labels.maxTemp": "Max Temperature (100°C)"
 }

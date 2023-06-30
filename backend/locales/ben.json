@@ -1,3 +1,16 @@
 {
-  "hello": "হাই!"
+  "hello": "হাই!",
+  "times.units.hour": "ঘন্টা",
+  "times.units.min": "মিনিট",
+  "times.units.sec": "সেকেন্ড",
+  "tabs.names.temp": "তাপমাত্রা",
+  "tabs.names.humid": "আর্দ্রতা",
+  "tabs.names.combined": "সংযুক্ত",
+  "graph.units.hour": "ঘন্টা",
+  "graph.units.min": "মিনিট",
+  "graph.units.sec": "সেকেন্ড",
+  "graph.labels.minHumid": "সর্বনিম্ন আর্দ্রতা (10%)",
+  "graph.labels.maxHumid": "সর্বাধিক আর্দ্রতা (50%)",
+  "graph.labels.minTemp": "সর্বনিম্ন তাপমাত্রা (60°C)",
+  "graph.labels.maxTemp": "সর্বাধিক তাপমাত্রা (100°C)"
 }

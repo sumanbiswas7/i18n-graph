@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const { I18n } = require("i18n");
+const translations = require("./models/translations");
 
 const app = express();
 const PORT = 5000;
@@ -16,7 +17,15 @@ app.use(i18n.init);
 
 app.get("/", (req, res) => {
   try {
-    res.status(200).send({ hello: res.__("hello") });
+    res.status(200).send({ status: "OK", message: res.__("hello") });
+  } catch (error) {
+    res.status(500).send({ error: "Internal Server Error" });
+  }
+});
+
+app.get("/data", (req, res) => {
+  try {
+    res.status(200).send(translations(res));
   } catch (error) {
     res.status(500).send({ error: "Internal Server Error" });
   }

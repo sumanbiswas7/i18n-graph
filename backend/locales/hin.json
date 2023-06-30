@@ -1,3 +1,16 @@
 {
-  "hello": "हैलो!"
+  "hello": "नमस्ते",
+  "times.units.hour": "घंटे",
+  "times.units.min": "मिनट",
+  "times.units.sec": "सेकंड",
+  "tabs.names.temp": "तापमान",
+  "tabs.names.humid": "आर्द्रता",
+  "tabs.names.combined": "संयुक्त",
+  "graph.units.hour": "घंटा",
+  "graph.units.min": "मिनट",
+  "graph.units.sec": "सेकंड",
+  "graph.labels.minHumid": "न्यूनतम आर्द्रता (10%)",
+  "graph.labels.maxHumid": "अधिकतम आर्द्रता (50%)",
+  "graph.labels.minTemp": "न्यूनतम तापमान (60°C)",
+  "graph.labels.maxTemp": "अधिकतम तापमान (100°C)"
 }
