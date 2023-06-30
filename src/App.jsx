@@ -7,6 +7,7 @@ import { TempChart } from "./components/TempChart";
 import { HumidChart } from "./components/HumidChart";
 import { CombinedChart } from "./components/CombinedChart";
 import { colors } from "./colors";
+import { LanguagePicker } from "./components/LanguagePicker";
 
 export default function App() {
   const [data, setData] = useState([]);
@@ -41,7 +42,17 @@ export default function App() {
         </Tabs.Panel>
       </Tabs>
 
-      <SelectX onChange={handleXSelectChange} />
+      <div
+        style={{
+          width: 1000,
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "flex-end",
+        }}
+      >
+        <SelectX onChange={handleXSelectChange} />
+        <LanguagePicker />
+      </div>
     </div>
   );
 }
