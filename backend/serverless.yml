@@ -1,0 +1,16 @@
+service: i18n-graph
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  stage: dev
+  region: ap-south-1
+  timeout: 10
+
+functions:
+  hello:
+    handler: server.handler
+    events:
+      - http: GET /{proxy+}
+      - http: GET /
