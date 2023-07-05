@@ -1,8 +1,9 @@
 import axios from "axios";
+import { BASE_URL } from "./base_url";
 
 export async function get_lang_data(lang) {
   try {
-    const res = await axios.get("http://localhost:5000/lang-data", {
+    const res = await axios.get(`${BASE_URL}/lang-data`, {
       headers: {
         "Accept-Language": lang || "en",
       },
